@@ -4,6 +4,8 @@
 //classes and their dependencies.
 
 using BlogProject.API.Data;
+using BlogProject.API.Repositories.Implementation;
+using BlogProject.API.Repositories.Interface;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -19,8 +21,9 @@ builder.Services.AddDbContext< ApplicationDbcontext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("BlogProjectConnectionString"));
 });
 
-var app = builder.Build();
+builder.Services.AddScoped<ICategoryRepository, CategoryRepository>();
 
+var app = builder.Build();
 
 
 
