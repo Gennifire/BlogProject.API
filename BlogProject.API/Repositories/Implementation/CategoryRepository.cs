@@ -13,8 +13,6 @@ namespace BlogProject.API.Repositories.Implementation
             this._dbContext = applicationDbcontext;
         }
 
-       
-
         public async Task<Category> CreateAsync(Category category)
         {
             await _dbContext.Catergories.AddAsync(category);

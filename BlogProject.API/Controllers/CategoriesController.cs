@@ -17,7 +17,8 @@ namespace BlogProject.API.Controllers
         {
             this._categoryRepository = categoryRepository;
         }
-        //
+
+        //CRUD: C - Create
         [HttpPost]
         public async Task<IActionResult> CreateCategory(CreateCategoryRequestDTO request)
         {
