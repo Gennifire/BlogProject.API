@@ -15,7 +15,7 @@ namespace BlogProject.API.Repositories.Implementation
 
         public async Task<Category> CreateAsync(Category category)
         {
-            await _dbContext.Catergories.AddAsync(category);
+            await _dbContext.Categories.AddAsync(category);
             await _dbContext.SaveChangesAsync();
 
             return category;

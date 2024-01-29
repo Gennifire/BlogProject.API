@@ -11,6 +11,6 @@ namespace BlogProject.API.Data
 
         public DbSet<BlogPost> BlogPosts { get; set; }
 
-        public DbSet<Category> Catergories { get; set; }
+        public DbSet<Category> Categories { get; set; }
     }
 }

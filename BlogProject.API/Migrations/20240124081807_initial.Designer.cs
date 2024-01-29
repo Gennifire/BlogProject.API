@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BlogProject.API.Migrations
 {
     [DbContext(typeof(ApplicationDbcontext))]
-    [Migration("20240122125204_initial Migration")]
-    partial class initialMigration
+    [Migration("20240124081807_initial")]
+    partial class initial
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -82,7 +82,7 @@ namespace BlogProject.API.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Catergories");
+                    b.ToTable("Categories");
                 });
 #pragma warning restore 612, 618
         }

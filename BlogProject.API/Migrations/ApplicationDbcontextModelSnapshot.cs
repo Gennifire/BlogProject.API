@@ -79,7 +79,7 @@ namespace BlogProject.API.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Catergories");
+                    b.ToTable("Categories");
                 });
 #pragma warning restore 612, 618
         }
