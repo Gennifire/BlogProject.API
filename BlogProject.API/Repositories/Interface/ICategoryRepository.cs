@@ -6,5 +6,7 @@ namespace BlogProject.API.Repositories.Interface
     {
         //define methods only here
         Task<Category> CreateAsync(Category category);
+
+        Task<IEnumerable<Category>> GetAllAsync();
     }
 }
